@@ -1,0 +1,176 @@
+[MDI_HEADER]
+FILE_TYPE            = tir
+FILE_VERSION         = 3.0
+FILE_FORMAT          = ASCII
+
+[UNITS]
+LENGTH               = 'meter'
+FORCE                = 'Newton'
+ANGLE                = 'radians'
+MASS                 = 'kg'
+TIME                 = 'second'
+
+[MODEL]
+FITTYP               = 6
+TYRESIDE             = LEFT
+USE_MODE             = 14
+LONGVL               = 11.17
+VXLOW                = 1
+
+[DIMENSION]
+UNLOADED_RADIUS      = 0.2286
+WIDTH                = 0.1524
+RIM_RADIUS           = 0.127
+RIM_WIDTH            = 0.1778
+ASPECT_RATIO         = 0.67
+
+[VERTICAL]
+FNOMIN               = 659
+VERTICAL_STIFFNESS   = 124671
+BREFF                = 0.24
+DREFF                = 8
+FREFF                = 0.01
+
+[SCALING_COEFFICIENTS]
+LFZO                 = 1
+LCX                  = 1
+LMUX                 = 1
+LEX                  = 1
+LKX                  = 1
+LHX                  = 1
+LVX                  = 1
+LCY                  = 1
+LMUY                 = 1
+LEY                  = 1
+LKY                  = 1
+LHY                  = 1
+LVY                  = 1
+LTR                  = 1
+LRES                 = 1
+LXAL                 = 1
+LYKA                 = 1
+LVYKA                = 1
+LS                   = 1
+LMX                  = 1
+LVMX                 = 1
+LMY                  = 1
+LSGKP                = 1
+LSGAL                = 1
+LGYR                 = 1
+
+[VERTICAL_FORCE_RANGE]
+FZMIN                = 0
+FZMAX                = 2000
+
+[LONG_SLIP_RANGE]
+KPUMIN               = -1
+KPUMAX               = 1
+
+[SLIP_ANGLE_RANGE]
+ALPMIN               = -1
+ALPMAX               = 1
+
+[INCLINATION_ANGLE_RANGE]
+CAMMIN               = -0.2
+CAMMAX               = 0.2
+
+[LONGITUDINAL_COEFFICIENTS]
+PCX1                 = 1.61867
+PDX1                 = 1.503
+PDX2                 = -0.0439219
+PDX3                 = 0.02
+PEX1                 = 2.22045e-14
+PEX2                 = -0.2
+PEX3                 = -0.1
+PEX4                 = 0
+PKX1                 = 27.8641
+PKX2                 = -0.230632
+PKX3                 = -0.098546
+PHX1                 = 0.000240667
+PHX2                 = -0.00109
+PVX1                 = 0.0148179
+PVX2                 = -0.0165832
+RBX1                 = 14.5476
+RBX2                 = -12.9538
+
+[OVERTURNING_COEFFICIENTS]
+QSX1                 = 0.0109749
+QSX2                 = 1.1207
+QSX3                 = -0.055578
+
+[LATERAL_COEFFICIENTS]
+PCY1                 = 1.1
+PDY1                 = -1.67627
+PDY2                 = 0.0700444
+PDY3                 = -7
+PEY1                 = -0.75
+PEY2                 = -0.1
+PEY3                 = -2.22045e-14
+PEY4                 = -3.5
+PKY1                 = -33.3855
+PKY2                 = 2.2466
+PKY3                 = 0.1
+PHY1                 = 0.00558066
+PHY2                 = 0.00137893
+PHY3                 = 1.42699e-13
+PVY1                 = 0.0460628
+PVY2                 = -0.0010795
+PVY3                 = -1.20646e-09
+PVY4                 = 0.15
+RBY1                 = 10
+RBY2                 = 3
+RBY3                 = -3.88132e-09
+RCX1                 = 1.05342
+RCY1                 = 1.15
+REX1                 = 0.01
+REX2                 = 0.01
+REY1                 = 0.05
+REY2                 = 0.05
+RHX1                 = 0.00406243
+RHY1                 = -0.0019087
+RHY2                 = 0.00778632
+RVY1                 = 2.22045e-14
+RVY2                 = -0.084624
+RVY3                 = 2.22045e-14
+RVY4                 = 70
+RVY5                 = 0.638497
+RVY6                 = -1
+
+[ROLLING_COEFFICIENTS]
+QSY1                 = 0
+QSY2                 = 0
+QSY3                 = 0
+QSY4                 = 0
+
+[ALIGNING_COEFFICIENTS]
+QBZ1                 = 9.82762
+QBZ2                 = -0.811894
+QBZ3                 = -1
+QBZ4                 = -0.1
+QBZ5                 = -0.1
+QBZ9                 = 15
+QBZ10                = -0.1
+QCZ1                 = 1.24744
+QDZ1                 = 0.110108
+QDZ2                 = -0.01
+QDZ3                 = 0.02
+QDZ4                 = 7
+QDZ6                 = -0.0092156
+QDZ7                 = 0.02
+QDZ8                 = 1.73782
+QDZ9                 = -0.02
+QEZ1                 = -0.391063
+QEZ2                 = -7.10056e-09
+QEZ3                 = 0.1
+QEZ4                 = 0.8
+QEZ5                 = -2.5
+QHZ1                 = 0.00927791
+QHZ2                 = -0.0108392
+QHZ3                 = 0.0135338
+QHZ4                 = 0.02
+SSZ1                 = 0.00043729
+SSZ2                 = 0.00878595
+SSZ3                 = -1.47872
+SSZ4                 = 0.5
+QTZ1                 = 0
+
