@@ -1,0 +1,180 @@
+[MDI_HEADER]
+FILE_TYPE            = 'tir'
+FILE_VERSION         = 3.0
+FILE_FORMAT          = 'ASCII'
+
+[UNITS]
+LENGTH               = 'meter'
+FORCE                = 'Newton'
+ANGLE                = 'radians'
+MASS                 = 'kg'
+TIME                 = 'second'
+
+[MODEL]
+FITTYP               = 6
+TYRESIDE             = RIGHT
+USE_MODE             = 14
+LONGVL               = 11.176
+VXLOW                = 1
+
+[DIMENSION]
+UNLOADED_RADIUS      = 0.26499485586301486
+WIDTH                = 0
+RIM_RADIUS           = 0
+RIM_WIDTH            = 0
+ASPECT_RATIO         = 0
+
+[VERTICAL]
+FNOMIN               = 1000
+VERTICAL_STIFFNESS   = 137755.34564255452
+BREFF                = 1.845738772909458
+DREFF                = 0.10568569048464647
+FREFF                = 0.22507187253284797
+
+[SCALING_COEFFICIENTS]
+LFZO                 = 1
+LCX                  = 1
+LMUX                 = 0.666
+LEX                  = 1
+LKX                  = 1
+LHX                  = 1
+LVX                  = 1
+LCY                  = 1
+LMUY                 = 0.666
+LEY                  = 1
+LKY                  = 1
+LHY                  = 1
+LVY                  = 1
+LTR                  = 1
+LRES                 = 1
+LXAL                 = 1
+LYKA                 = 1
+LVYKA                = 1
+LS                   = 1
+LMX                  = 1
+LVMX                 = 1
+LSGKP                = 1
+LSGAL                = 1
+LGYR                 = 1
+
+[VERTICAL_FORCE_RANGE]
+FZMIN                = 0
+FZMAX                = 0
+
+[LONG_SLIP_RANGE]
+KPUMIN               = 0
+KPUMAX               = 0
+
+[SLIP_ANGLE_RANGE]
+ALPMIN               = 0
+ALPMAX               = 0
+
+[INCLINATION_ANGLE_RANGE]
+CAMMIN               = 0
+CAMMAX               = 0
+
+[LONGITUDINAL_COEFFICIENTS]
+PCX1                 = 1.75
+PDX1                 = 2.3582757175541267
+PDX2                 = -0.0648225518354168
+PDX3                 = 0
+PEX1                 = 0.41025760509049053
+PEX2                 = -0.39834389777647805
+PEX3                 = 0.3329272653554606
+PEX4                 = 0.29812900892472005
+PKX1                 = 58.81958394122368
+PKX2                 = -0.4999999999999999
+PKX3                 = -0.3025841412970846
+PHX1                 = 0
+PHX2                 = 0
+PVX1                 = 0
+PVX2                 = 0
+RBX1                 = 16
+RBX2                 = 15.827713781194873
+RCX1                 = 1.1
+REX1                 = 0.04834010512048132
+REX2                 = 0
+RHX1                 = 0.008405185955470157
+PTX1                 = 1
+PTX2                 = 0
+PTX3                 = 0
+
+[OVERTURNING_COEFFICIENTS]
+QSX1                 = 0.023286751290517688
+QSX2                 = 1.239572775759807
+QSX3                 = -0.05670335036698776
+
+[LATERAL_COEFFICIENTS]
+PCY1                 = 1.449999999999655
+PDY1                 = 2.338661283028422
+PDY2                 = -0.2601583724343734
+PDY3                 = 1.5
+PEY1                 = -0.14464969844119785
+PEY2                 = -0.050479087094504944
+PEY3                 = 0.999999999998767
+PEY4                 = -0.4999999999998735
+PKY1                 = -67.59881304986703
+PKY2                 = 2.313629409592745
+PKY3                 = 1.593558951463629
+PHY1                 = 0.0004915854799888333
+PHY2                 = 0.00521436462698243
+PHY3                 = -0.11787721795091072
+PVY1                 = -0.009999999999999959
+PVY2                 = 0.01
+PVY3                 = -0.3680934333667626
+PVY4                 = -1
+RBY1                 = 15.999999999999194
+RBY2                 = 15.999999999996973
+RBY3                 = 0.04497862551685882
+RCY1                 = 1.149999999999992
+REY1                 = 0.6912266510670547
+REY2                 = 0
+RHY1                 = 0.003700978868003706
+RHY2                 = 0.009480328747492049
+RVY1                 = 0.01
+RVY2                 = 0.01
+RVY3                 = 0.01
+RVY4                 = -0.01
+RVY5                 = 0.01
+RVY6                 = 0.01
+PTY1                 = 2.2492552672467485
+PTY2                 = 2.958550983852362
+
+[ROLLING_COEFFICIENTS]
+QSY1                 = 0.01
+QSY2                 = 0
+QSY3                 = 0
+QSY4                 = 0
+
+[ALIGNING_COEFFICIENTS]
+QBZ1                 = 11.42446615068122
+QBZ2                 = -2.999999999997817
+QBZ3                 = -0.5021503876951648
+QBZ4                 = 0
+QBZ5                 = 0.12093402630608058
+QBZ9                 = -1
+QBZ10                = 0
+QCZ1                 = 1.265861376120108
+QDZ1                 = 0.10278600902239135
+QDZ2                 = -0.03742794615583124
+QDZ3                 = -1.9999999999977813
+QDZ4                 = -2
+QDZ6                 = -0.01999999999999784
+QDZ7                 = 0.0007688639516394962
+QDZ8                 = 0.4999999999999423
+QDZ9                 = 0.9386035346383654
+QEZ1                 = -0.9999999999949822
+QEZ2                 = -0.001518851561332628
+QEZ3                 = 0
+QEZ4                 = -0.23126810745385007
+QEZ5                 = -2.999999999997857
+QHZ1                 = 0.009313705773431007
+QHZ2                 = -0.04581364301567064
+QHZ3                 = -0.0999999999999979
+QHZ4                 = -0.1
+SSZ1                 = -0.044524292367939526
+SSZ2                 = -0.03141943403769133
+SSZ3                 = -1.4027448589456017
+SSZ4                 = 0.9507088651847044
+QTZ1                 = 0
+MBELT                = 0
