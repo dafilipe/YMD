@@ -7,13 +7,6 @@ root = fileparts(mfilename('fullpath'));
 
 addpath(genpath(root));
 
-delete(gcp('nocreate'));
-pool = parpool('local');
-
-mfiles = dir(fullfile(root, '**', '*.m'));
-mfiles = fullfile({mfiles.folder}, {mfiles.name});
-
-addAttachedFiles(pool, mfiles);
 
 fprintf("\n");
 fprintf("╔════════════════════════════════════════════════════════════╗\n");
