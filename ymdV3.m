@@ -4,6 +4,20 @@ addpath('MFeval')
 model = mfeval.readTIR(tiremodel);
 
 p = get_excel_value();
+
+figs_before = findall(0, 'Type', 'figure');
+
+run_stamp = char(datetime('now', 'Format', 'yyyyMMdd_HHmmss'));
+base_output_dir = fullfile(pwd, 'images', ['run_' run_stamp]);
+output_dir = base_output_dir;
+
+i = 1;
+while exist(output_dir, 'dir')
+    output_dir = sprintf('%s_%02d', base_output_dir, i);
+    i = i + 1;
+end
+
+mkdir(output_dir);
 p.n_map_points = 15;
 p.balance_limit = 0.05;
 
@@ -173,6 +187,8 @@ if p.do_search
         best_gamma_f, best_gamma_r, best_tau_f, best_tau_r));
 
 end
+save_generated_figures(output_dir, figs_before);
+fprintf('\nFiguras guardadas em: %s\n', output_dir);
 end
 
 % =========================================================================
@@ -340,4 +356,49 @@ if numel(u) >= 2
 else
     tol = 1e-6;
 end
+end
+
+function save_generated_figures(output_dir, figs_before)
+
+all_figs = findall(0, 'Type', 'figure');
+figs = setdiff(all_figs, figs_before);
+
+if isempty(figs)
+    warning('Nenhuma figura nova encontrada para guardar.');
+    return;
+end
+
+for k = 1:numel(figs)
+
+    fig = figs(k);
+    fig_name = get(fig, 'Name');
+
+    if isempty(fig_name)
+        fig_name = sprintf('figure_%02d', k);
+    end
+
+    safe_name = regexprep(fig_name, '[^\w\d-]', '_');
+    safe_name = regexprep(safe_name, '_+', '_');
+    safe_name = regexprep(safe_name, '^_|_$', '');
+
+    if isempty(safe_name)
+        safe_name = sprintf('figure_%02d', k);
+    end
+
+    file_name = sprintf('%02d_%s', k, safe_name);
+
+    png_path = fullfile(output_dir, [file_name '.png']);
+    fig_path = fullfile(output_dir, [file_name '.fig']);
+
+    drawnow;
+
+    savefig(fig, fig_path);
+
+    try
+        exportgraphics(fig, png_path, 'Resolution', 300);
+    catch
+        saveas(fig, png_path);
+    end
+end
+
 end
